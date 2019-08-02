@@ -7,7 +7,7 @@ const sliceErrorStack = (err: Error) =>
     .filter(includesThisFileName)
     .join('\n')
 
-export default (error: Error, message: string) => {
+export = (error: Error, message: string) => {
   const newError = new Error(message)
   // @ts-ignore
   newError.original = error
