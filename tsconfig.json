@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "pretty": true,
+    "declaration": true,
+    "alwaysStrict": true,
+    // "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "lib": [
+      "es2017"
+    ],
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "text"
+  ]
+}
