@@ -1,5 +1,6 @@
-const includesThisFileName = (str: string) =>
-  !str.includes(__filename)
+const includesThisFileName = typeof __filename === 'undefined'
+  ? () => true
+  : (str: string) => !str.includes(__filename)
 
 const sliceErrorStack = (err: Error) =>
   (err.stack || '')
